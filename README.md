@@ -11,9 +11,9 @@ Clone the project
 #### Simple Recursive Strategy
 > cd [Project Directory]
 
-> ./srs --data_file [DATA FILE PATH]
+> srs --data_file [DATA FILE PATH]
 
 or
 
-> ./srs --data_file offres.txt
+> srs --data_file offres.txt
 
