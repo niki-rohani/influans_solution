@@ -16,4 +16,26 @@ Clone the project
 or
 
 > srs --data_file offres.txt
+> srs --data_file offres_trick.txt
+
+
+#### Second Recursive Strategy
+> cd [Project Directory]
+
+> srs_2 --data_file [DATA FILE PATH]
+
+or
+
+> srs_2 --data_file offres.txt
+> srs_2 --data_file offres_trick.txt
+
+#### heuristic Recursive Strategy
+> cd [Project Directory]
+
+> hrs --data_file [DATA FILE PATH]
+
+or
+s
+> hrs --data_file offres.txt
+> hrs --data_file offres_trick.txt
 
