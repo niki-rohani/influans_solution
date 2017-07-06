@@ -2,14 +2,13 @@ import math
 import numpy as np
 
 
-world_visited = 0
-
-def simple_recursive_strategy(data):
+def iterative_strategy(data):
     """
     Do an exhaustive research of every possible world and return the max reward
     :param data: Numpy array of Rewards for every items
     :return: Max reward
     """
+
     def srs(worlds, counter):
         """
         define the recursive function
@@ -21,10 +20,7 @@ def simple_recursive_strategy(data):
             return counter
         return np.max([srs(worlds=possible_worlds(world),
                            counter=counter+world[0]) for world in worlds])
-
-    srs = srs([data], 0)
-    print("World visited = " + str(world_visited))
-    return srs
+    return srs([data], 0)
 
 def possible_worlds(current_list):
     """
@@ -32,7 +28,4 @@ def possible_worlds(current_list):
     :param current_list: Numpy array
     :return: List of Numpy array
     """
-    global world_visited
-    possible_worlds = [current_list[i:] for i in range(1, 6) if i < current_list.shape[0]]
-    world_visited += len(possible_worlds)
-    return possible_worlds
+    return [current_list[i:] for i in range(1, 6) if i < current_list.shape[0]]
