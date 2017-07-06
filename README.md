@@ -16,6 +16,7 @@ Clone the project
 or
 
 > srs --data_file offres.txt
+
 > srs --data_file offres_trick.txt
 
 
@@ -27,6 +28,7 @@ or
 or
 
 > srs_2 --data_file offres.txt
+
 > srs_2 --data_file offres_trick.txt
 
 #### heuristic Recursive Strategy
@@ -35,7 +37,8 @@ or
 > hrs --data_file [DATA FILE PATH]
 
 or
-s
+
 > hrs --data_file offres.txt
+
 > hrs --data_file offres_trick.txt
 
